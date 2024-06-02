@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body style="background-color: beige;">
+
+    <div align="center" style="background-color: rgb(187, 233, 249); border-radius: 225px;" >
+
+    <form target="_blank" action="Form in HTML.html" method="post" enctype="multipart/form-data">
+        <label for="username">Username:</label>                                           <!--text type-->
+        <input type="text" id="username" placeholder="Username" maxlength="15"><br>
+        
+        <label for="password">password:</label>
+        <input type="password" id="password" required minlength="0" ><br>                 <!--password type-->
+
+        <label for="email">Email:</label>                                                 <!--email type-->
+        <input type="email" id="email" placeholder="something@gmail.com" minlength="5"><br>  
+
+        <label for="phone">Phone No:</label>                 <!--tel(telephone) type-->
+        <input type="tel" id="phone" placeholder="01234-567891" minlength="0" maxlength="11" ><br><br>
+
+        <label for="quantity">Quantity:</label>               <!--number(quantity) type-->
+        <input type="number" id="quantity" min="0"><br>
+ 
+        <label for="bday">Birthday:</label>              <!--birthday type -->
+        <input type="date" id="bday"><br>
+        
+        <!--radio type starts-->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title">
+
+        <label for="PdD.">PhD.</label>
+        <input type="radio" id="PhD." name="title"><br><br>
+        <!--radio type starts-->
+         
+        <label for="semester">Select Semester:</label>           <!--dropdown menu-->
+        <select id="semester">
+            <option value="Spring 24">Spring 24</option>
+            <option value="Summer 24">Summer 24</option>
+            <option value="Fall 24">Fall 24</option>
+        </select> <br>
+
+        <label for="checkbox">Subscribe:</label>    
+        <input type="checkbox" id="checkbox" name="title"><br>  <!--checkbox type-->
+
+        <label for="comment">Comment:</label>                        <!--comment area type-->
+        <textarea id="comment" rows="3" cols="25"></textarea><br>   
+        
+        <label for="file">File:</label>     <!--can take/upload a file-->
+        <input type="file" id="file" accept="image/jpeg, image/png"><br>
+ 
+
+        <label for="reset"></label>                  <!--reset type-->
+        <input type="reset" id="reset"><br>
+
+        <label for="submit"></label>                 <!--submit type-->
+        <input type="submit" id="submit"><br>
+
+
+    </form>
+    </div>
+
+
+</body>
+</html>
